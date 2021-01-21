@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Crossing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css"><!--sirve para tachar los estilos-->
+</head>
+<body>
+    
+
+  <!-- NAVBAR--><!--imagen de presentacion de la pagina, tambien define los botones de las opciones del sitio-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-danger" id="navbar"><!--defines el color y contraste de el fonde donde se ubica el logo-->
+        <div class="container-fluid"><!--alinea el menu de abajo con la imagen del sitio hacia la derecha-->
+            <a class="navbar-brand" href="#"><!--sirve para identificar el logo del sitio-->
+                <img src="img/logo.jpg" alt="" width="200"><!--sirve para insertar y definir tamaño del logo-->
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><!--sirve para definir e identificar el elemento colapsado-->
+                <span class="navbar-toggler-icon"></span><!--menu de despliegue de las opciones listadas abajo-->
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"><!--sirve para que se ejecute la funcion de mostrar el menu cuando la pantalla cambie de tamaño o para cuando se quiera abrir el icono donde estan almacenados los menus-->
+                <ul class="navbar-nav ml-auto"><!--ml es margin left, pondra el menu hacia la izquierda de la pantalla-->
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Summer pack</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sign in</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CAROUSEL-->
+    <div id="mainSlider" class="carousel slide" data-ride="carousel"><!--estructura del carrusel de imagenes-->
+        <div class="carousel-inner">
+          <div class="carousel-item "><!--contenedor de la imagen del carrusel-->
+            <img src="img/slide01.jpg" class="d-block w-100" alt="..."><!--primera imagen que se va a mostrar al iniciar la pagina-->
+          </div>
+          <div class="carousel-item active"><!--active significa que esta sera la primera imagen en mostrarse-->
+            <img src="img/slide02.jpg" class="d-block w-100" alt="..."><!--d-block es display block y el W es el ancho para ajustar de la imagen en porcentaje-->
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide03.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+    </div><!-- CAROUSEL-->
+
+    <!-- RIBBON--><!--es la implementacion de la imagen sobrepuesta a otra mostrada debajo de las imagenes del carrusel-->
+    <div id="ribbon"><!--imagen de fondo-->
+        <div id="birthday" class="container w-50 pl-5 pr-5 rounded-lg"><!--imagen que se sobrepone al fondo, pl significa paddin left 5 que quiere decir que la imagen estara 5 espacios hacia la derecha y rounded es para hacer que las esquinas del fondo de la imagen esten redondeadas-->
+          <!-- slide -->
+          <div class="row align-items-center"><!--sirve para centrear el texto -->
+            <div class="col-sm col-sm p-3" id="description"><!--col sm es para realizar un salto de linea-->
+              <img src="img/image01.png" class="w-75 mx-auto d-block" alt="..."><!--implementacion de la imagen sobrepuesta, mx es margin x o sea margen horizontal-->
+            </div>
+            
+            <div class="col-sm p-3 text-light text-center"><!--text light es para hacer que las letras posean un color blanco, text center es para centrear el texto-->
+              <p class="text-warning h3">Today is</p><!--implementacion del texto donde esta la imagen sobrepuesta-->
+              <h4 class="h2 text-shadow">Samson's Birthday</h4><!--el color del fondo, el sombreado de las letras y del fondo estan creados en el main.css-->
+            </div>
+          </div><!-- SLIDE-->
+        </div>
+    </div><!-- RIBBON-->
+
+    <!-- SEPARATOR RIBBON--><!--es para separar diferentes segmentos de la pagina, se lo representa como una linea que puede ser diseñada de forma variada-->
+    <div id="separator-ribbon"><!--estructura del separador-->
+      <div class="content bg-warning"></div><!--bg warning es el color del separador-->
+    </div><!--el separador como tal se crea en el main.css-->
+
+    <!-- GAMES--><!--lo que se desarrolla aqui es como un muestrario, tienes una imagen, con titulo, descripcion y boton para interactuar con el mismo-->
+    <div id="games">
+      <div class="container-md p-5">
+        
+        <div class="row pt-5">
+            <h3 class="text-center pb-5 pt-5 h1">Featured Animal Crossing games</h3>
+        </div>
+
+        <div class="row"><!--para que se vean todas las imagenes de las cartas se las tiene que poner en una fila y aparte cada imagen y descripcion estara en columnas diferentes-->
+            <div class="col-sm">
+                <div class="card w-100 card-border mb-5"><!--el estilo card border se crea en el main.css, ahi se le pude customizar cosas como la transicion al momento de poner el cursor en la imagen de la carta lo cual hace que esta cambie de tamaño, incluso el fondo que es una imagen de este segmento se lo define en el css-->
+                    <img src="img/card01.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm">
+                <div class="card w-100 card-border mb-5">
+                    <img src="img/card02.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm">
+                <div class="card w-100 card-border mb-5">
+                    <img src="img/card03.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div>
+          </div>
+
+          <div class="row py-5">
+            <div class="col">
+              <h3 class="text-center" style="color: var(--bs-blue)">More games on Nintendo.com:</h3><!--se crea una fila y columna para introducir el titulo de los links que se presentaran abajo-->
+            </div><!--style="color: var(--bs-blue)" es para que las letras cambien de color tanto del titulo como de los elementos de cada columna en este caso-->
+          </div><!---->
+          <div class="row justify-content-center"><!--todos los elementos que se creen iran centreados-->
+            <div class="col-2"><a href="#">Nintendo Switch</a></div><!--el col-2 significa espacios que se daran entre columnas-->
+            <div class="col-2"><a href="#">Nintendo 3DS</a></div>
+            <div class="col-1"><a href="#">Wii U</a></div>
+            <div class="col-1"><a href="#">Mobile</a></div>
+            <div class="col-1"><a href="#">Retro</a></div>
+          </div>
+        </div>
+      </div>  
+    </div>
+    
+
+    <div id="separator-amiibos"><!--crea un separador pero en direccion inferior lo cual se detalla en el main.css ya que es una propiedad que se tiene que crear-->
+      <div class="content bg-success"></div>
+    </div>
+    
+    <div id="amiibos" class="px-5 pb-5 bg-success">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center text-white text-shadow h1">Featured Amiibo™ figures</h2><!--el titulo del container, esta centreado-->
+            </div>
+            <div class="row row-cols-1 row-cols-2 row-cols-sm-2 row-cols-md-4"><!--creacion de las columnas donde estaran las imagenes y nombre de las imagenes, row-cols-1 row-cols-2 es para que cuando se enpequeñezca al limite la pantalla se muestren 2 o 1 elementos o imagenes por fila,row-cols-sm-2 row-cols-md-4 es para que cuando la pantalla este partida a la mitad se sigan mostrando 4 elementos y cuando la pantalla sea pequeña se muestren 2 imagenes por fila-->
+                <div class="col-sm"><!--los 2 fondos que existen en este container se establecen en el main.css-->
+                  <img src="img/figure01.png" alt="" class="w-100 amiibo"><!--primera imagen en la primera columna, se cambia su tamaño a medida que se hace mas pequeña la pantalla con el width (w_100)-->
+                  <div class="text-center"><span class="amiibo-name h5 p-2">Isabelle</span></div><!--texto de la primera imagen pero en diferente fila-->
+                </div>
+                <div class="col-sm">
+                  <img src="img/figure02.png" alt="" class="w-100 amiibo">
+                  <div class="text-center"><span class="amiibo-name h5 p-2">Kapp'n</span></div>
+                </div>
+                <div class="col-sm">
+                  <img src="img/figure03.png" alt="" class="w-100 amiibo">
+                  <div class="text-center"><span class="amiibo-name h5 p-2">Rover</span></div>
+                </div>
+                <div class="col-sm">
+                  <img src="img/figure04.png" alt="" class="w-100 amiibo">
+                  <div class="text-center"><span class="amiibo-name h5 p-2">Timmy & Tommy</span></div>
+                </div>
+            </div>
+            <div class="row py-5">
+              <div class="col text-center">
+                <a href="#" class="link-dark"><!--determina el color del boton-->
+                  <button class="btn btn-warning btn-lg rounded-pill p-3 font-weight-bold">View Amiibo catalog</button><!--se crea el objeto button debajo de las imagenes y al centro,btn-lg es para determinar el tamaño del boton-->
+                </a>
+                
+              </div>
+                
+            </div>
+        </div>
+        <div id="separator-amiibos-footer">
+        </div>
+    </div>
+    
+
+  <!-- Play Nintendo-->
+  <div id="play" >
+    <div class="container-sm p-5">
+      <h3 class="text-center h1">Isabelle and friends on Play Nintendo</h3>
+      <div class="row justify-content-center align-items-center">
+        <div class="col-3 d-none d-md-block">
+          <img src="img/isabelle.png" class="w-100">
+        </div>
+        <div class="col-9">
+          <div class="row justify-content-md-center">
+            <div class="col p-1">
+              <div class="card bg-primary text-white">   
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="img/ph-01.jpg" class="w-100"  alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below.</p>
+                    </div><!--card-body-->
+                  </div><!--col-->
+                </div><!--row-->
+              </div><!--CARD-->
+            </div><!--col-->
+            
+            <div class="col p-1">
+              <div class="card bg-warning text-white">   
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title 2</h5>
+                      <p class="card-text">This is a wider card with supporting text below.</p>
+                    </div><!--card-body-->
+                  </div>
+                  <div class="col-md-6">
+                    <img src="img/ph-02.jpg" class="w-100"  alt="...">
+                  </div><!--col-->
+                </div><!--row-->
+              </div><!--CARD-->
+            </div>
+          </div>
+        <div class="row  justify-content-md-center">
+          <div class="col p-1">
+            <div class="card bg-danger text-white">   
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="img/ph-03.jpg" class="w-100"  alt="...">
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below.</p>
+                    </div><!--card-body-->
+                  </div><!--col-->
+                </div><!--row-->
+              </div><!--CARD-->
+          </div>
+          <div class="col p-1">
+            <div class="card bg-success text-white">   
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below.</p>
+                    </div><!--card-body-->
+                  </div>
+                  <div class="col-md-6">
+                    <img src="img/ph-04.jpg" class="w-100"  alt="...">
+                  </div><!--col-->
+                </div><!--row-->
+              </div><!--CARD-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
+    <div id="footer" class="p-5">
+      <div class="container w-50 pt-5">
+        <div class="row row-cols-md-2 justify-content-md-center">
+          <div class="col text-center">
+            <a href="#">
+              <button class="btn btn-lg rounded-pill btn-warning w-100  p-3 shadow-sm font-weight-bold">Customer Support</button>
+            </a>
+            
+          </div>
+        </div>
+        <div class="row justify-content-md-center py-5">
+          <div class="col text-center font-weight-light">
+            <p>For Nintendo 3DS systems, use Parental Controls to restrict 3D mode for children 6 and under.</p>
+            <p>Internet access required for online features. For more info, go to support.nintendo.com.</p>
+            <p>Games and amiibo accessories sold separately. Figures shown not actual size. Compatibility and functionality of amiibo may vary per game. Visit amiibo.com for specific details on how each amiibo works.</p>
+            <p>© 2001 - 2020 Nintendo. Nintendo properties are trademarks of Nintendo.</p>
+          </div>
+          
+        </div>
+        <div class="row"></div>
+      </div>
+    </div>
+    
+
+    
+<script src="F:\universidad\programacion_3\ejercicio bootstrap/js/popper.min.js"></script>
+<script src="F:\universidad\programacion_3\ejercicio bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
